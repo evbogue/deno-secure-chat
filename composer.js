@@ -8,7 +8,7 @@ const pubkey = await ed25519.pubkey()
 
 const id = h('div', [pubkey])
 
-const textarea = h('textarea', {style: 'width: 98%;'})
+const textarea = h('textarea', {placeholder: 'Write a message', style: 'width: 98%;'})
 
 const button = h('button', {
   onclick: async () => {
