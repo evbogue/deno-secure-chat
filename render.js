@@ -15,7 +15,7 @@ export const render = async (m) => {
     onclick: (e) => {
       e.preventDefault()
       if (!raw.textContent) {
-        raw.textContent = m.raw
+        raw.textContent = JSON.stringify(m)
       } else { raw.textContent = ''} 
     }
   }, ['raw'])
